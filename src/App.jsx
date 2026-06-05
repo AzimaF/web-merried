@@ -116,7 +116,7 @@ function App() {
       <div className="desktop-layout">
         {/* Left Panel - Sticky Desktop Hero */}
         <div className="desktop-hero">
-          <img src="/images/couple_main.png" alt="Farah & Ikram" className="desktop-hero-bg" />
+          <img src="./images/couple_main.png" alt="Farah & Ikram" className="desktop-hero-bg" />
           <div className="desktop-hero-overlay" />
           <div className="desktop-hero-content" style={{ marginTop: '30vh' }}>
             <p className="desktop-hero-label" style={{ fontFamily: 'var(--font-elegant)', fontSize: '1.2rem', marginBottom: '0.5rem', textTransform: 'none', letterSpacing: '1px' }}>The Wedding of</p>

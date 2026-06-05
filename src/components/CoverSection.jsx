@@ -8,7 +8,7 @@ export default function CoverSection({ isOpen, onOpen }) {
 
   return (
     <section className={`cover-section ${isOpen ? 'hidden' : ''}`} id="cover">
-      <img src="/images/dashboard.png" alt="Cover" className="cover-bg" />
+      <img src="./images/dashboard.png" alt="Cover" className="cover-bg" />
       <div className="cover-content" style={{ zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <p className="cover-label" style={{ color: '#1a1a1a', marginBottom: '0.5rem', letterSpacing: '2px', fontSize: '0.85rem' }}>The Wedding of</p>
         <h1 className="cover-title" style={{ color: '#5D3F6A', fontFamily: 'var(--font-display)', fontSize: '3.5rem', marginBottom: '1.5rem', lineHeight: '1.2' }}>Farah & Ikram</h1>

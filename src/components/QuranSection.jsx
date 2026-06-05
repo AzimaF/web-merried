@@ -3,7 +3,7 @@ export default function QuranSection() {
     <section className="quran-section" id="quran">
       <div className="reveal" style={{ padding: '0', textAlign: 'center' }}>
         <img 
-          src="/images/Judul-Web-Nikah.png" 
+          src="./images/Judul-Web-Nikah.png" 
           alt="Judul Web Nikah" 
           style={{ width: '240px', height: 'auto', margin: '0 auto 2.5rem', display: 'block' }} 
         />
@@ -14,7 +14,7 @@ export default function QuranSection() {
           - QS. Ar-Rum : 21 -
         </p>
         <img 
-          src="/images/quran-section.png" 
+          src="./images/quran-section.png" 
           alt="Quran Illustration" 
           style={{ width: '100%', maxWidth: '300px', height: 'auto', margin: '2.5rem auto 0', display: 'block', borderRadius: '15px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }} 
         />

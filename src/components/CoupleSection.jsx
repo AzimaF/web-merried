@@ -13,7 +13,7 @@ export default function CoupleSection() {
 
         <div className="couple-card" style={{ marginBottom: '3rem' }}>
           <div className="arch-frame">
-            <img src="/images/bride_portrait.png" alt="Farah" />
+            <img src="./images/bride_portrait.png" alt="Farah" />
           </div>
           <h3 className="couple-name" style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--color-heading)' }}>Farah</h3>
           <p className="couple-fullname" style={{ fontWeight: '600', color: 'var(--color-text)' }}>Farah Dzakiyyah</p>
@@ -30,7 +30,7 @@ export default function CoupleSection() {
 
         <div className="couple-card">
           <div className="arch-frame">
-            <img src="/images/couple_main.png" alt="Ikram" />
+            <img src="./images/couple_main.png" alt="Ikram" />
           </div>
           <h3 className="couple-name" style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: 'var(--color-heading)' }}>Ikram</h3>
           <p className="couple-fullname" style={{ fontWeight: '600', color: 'var(--color-text)' }}>Muhammad Ikram</p>
