@@ -109,7 +109,7 @@ function App() {
     <>
       <audio
         ref={audioRef}
-        src="/music/teman-hidup.dat"
+        src="./music/teman-hidup.dat"
         loop
       />
 
