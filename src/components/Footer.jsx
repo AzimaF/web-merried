@@ -9,37 +9,25 @@ export default function Footer() {
       zIndex: 2
     }}>
       
-      {/* Gold Circle Logo */}
+      {/* Custom Logo */}
       <div style={{ 
         width: '60px', 
         height: '60px', 
-        backgroundColor: '#C5A866', 
-        borderRadius: '50%', 
         margin: '0 auto 1.5rem',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
+        justifyContent: 'center'
       }}>
-        <svg viewBox="0 0 24 24" fill="white" style={{ width: '30px' }}>
-          <path d="M12 2L2 22h20L12 2zm0 3.8l6.8 14.2H5.2L12 5.8z" />
-        </svg>
+        <img src="/web-merried/images/Logo-footer.png" alt="Logo Footer" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
       </div>
 
       <p className="footer-text" style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', fontWeight: '500', marginBottom: '1.5rem' }}>
-        Made with ❤️ by @aa_digital
+        Made with ❤️ by @thetumpuls
       </p>
 
       {/* Social Icons */}
       <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-        <a href="#" style={{ color: '#1a1a1a', textDecoration: 'none' }}>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px' }}>
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-        </a>
-        <a href="#" style={{ color: '#1a1a1a', textDecoration: 'none' }}>
+        <a href="https://wa.me/6285781021417" target="_blank" rel="noopener noreferrer" style={{ color: '#1a1a1a', textDecoration: 'none' }}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: '20px' }}>
             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
           </svg>

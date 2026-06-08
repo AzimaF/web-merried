@@ -29,7 +29,7 @@ export default function EventSection() {
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '3rem', marginBottom: '1.5rem', color: '#1a1a1a', fontWeight: 'normal' }}>Akad Nikah</h3>
           <div style={{ fontFamily: 'var(--font-body)', fontSize: '1.2rem', fontWeight: '500', marginBottom: '2rem', lineHeight: '1.4', color: '#1a1a1a' }}>
             Sabtu<br/>
-            <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>6 Juni 2026</span><br/>
+            <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>6 Juni 2027</span><br/>
             <span style={{ fontSize: '1rem' }}>06.00 - 08.00 WIB</span>
           </div>
           
@@ -63,7 +63,7 @@ export default function EventSection() {
           <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '3rem', marginBottom: '1.5rem', color: '#1a1a1a', fontWeight: 'normal' }}>Resepsi</h3>
           <div style={{ fontFamily: 'var(--font-body)', fontSize: '1.2rem', fontWeight: '500', marginBottom: '2rem', lineHeight: '1.4', color: '#1a1a1a' }}>
             Sabtu<br/>
-            <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>6 Juni 2026</span><br/>
+            <span style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>6 Juni 2027</span><br/>
             <span style={{ fontSize: '1rem' }}>11.00 - Selesai</span>
           </div>
           

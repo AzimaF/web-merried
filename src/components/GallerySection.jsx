@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 const galleryImages = [
-  '/images/couple_main.png',
-  '/images/bride_portrait.png',
-  '/images/quran-section.png',
-  '/images/couple_main.png',
+  '/web-merried/images/Gallery-1.jpeg',
+  '/web-merried/images/Gallery-2.jpeg',
+  '/web-merried/images/Gallery-3.jpeg',
+  '/web-merried/images/Gallery-4.jpeg',
 ]
 
 export default function GallerySection() {

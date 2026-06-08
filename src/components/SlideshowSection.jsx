@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 
 const images = [
-  '/images/couple_main.png',
-  '/images/bride_portrait.png',
-  '/images/cover_bg.png'
+  '/web-merried/images/couple_main.png',
+  '/web-merried/images/bride_portrait.png'
 ]
 
 export default function SlideshowSection() {
@@ -22,10 +21,12 @@ export default function SlideshowSection() {
       <div className="slideshow-content reveal">
         <div className="slideshow-container">
           {images.map((img, index) => (
-            <div 
+            <img 
               key={index}
+              src={img}
+              alt={`Slide ${index + 1}`}
               className={`slideshow-slide ${index === currentIndex ? 'active' : ''}`}
-              style={{ backgroundImage: `url(${img})` }}
+              style={{ objectFit: 'cover' }}
             />
           ))}
           

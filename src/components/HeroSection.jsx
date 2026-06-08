@@ -6,7 +6,7 @@ export default function HeroSection() {
         <h2 className="hero-name">Farah</h2>
         <span className="hero-ampersand">&</span>
         <h2 className="hero-name">Ikram</h2>
-        <p className="hero-date">06.06.2026</p>
+        <p className="hero-date">06.06.2027</p>
       </div>
       <div className="scroll-indicator" style={{ marginTop: 'auto', marginBottom: '2rem' }}>
         <svg 

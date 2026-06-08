@@ -11,7 +11,7 @@ function getTimeRemaining(targetDate) {
   }
 }
 
-const WEDDING_DATE = new Date('2026-06-07T08:00:00+07:00')
+const WEDDING_DATE = new Date('2027-06-07T08:00:00+07:00')
 
 export default function CountdownSection() {
   const [time, setTime] = useState(getTimeRemaining(WEDDING_DATE))
@@ -25,7 +25,7 @@ export default function CountdownSection() {
 
   const pad = (n) => String(n).padStart(2, '0')
 
-  const calendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Farah%20%26%20Ikram&dates=20260607T010000Z/20260607T070000Z&details=Undangan%20Pernikahan%20Farah%20Dzakiyyah%20%26%20Ikram&location=Jakarta`
+  const calendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Farah%20%26%20Ikram&dates=20270607T010000Z/20270607T070000Z&details=Undangan%20Pernikahan%20Farah%20Dzakiyyah%20%26%20Ikram&location=Jakarta`
 
   return (
     <section className="countdown-section" id="countdown" style={{ 

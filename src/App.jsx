@@ -122,7 +122,7 @@ function App() {
             <p className="desktop-hero-label" style={{ fontFamily: 'var(--font-elegant)', fontSize: '1.2rem', marginBottom: '0.5rem', textTransform: 'none', letterSpacing: '1px' }}>The Wedding of</p>
             <h1 className="desktop-hero-names" style={{ fontSize: '3.5rem', marginBottom: '1rem', whiteSpace: 'nowrap' }}>Farah & Ikram</h1>
             <p className="desktop-hero-hashtag" style={{ marginBottom: '0.5rem', letterSpacing: '1px' }}>#FarrahnyabersamaIkram</p>
-            <p className="desktop-hero-date" style={{ letterSpacing: '1px' }}>Sabtu, 6 Juni 2026</p>
+            <p className="desktop-hero-date" style={{ letterSpacing: '1px' }}>Sabtu, 6 Juni 2027</p>
           </div>
         </div>
 
