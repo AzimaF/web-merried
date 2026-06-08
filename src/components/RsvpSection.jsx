@@ -1,34 +1,64 @@
-import { useState, useCallback } from 'react'
-
-const initialWishes = [
-  { name: 'Budi Santoso', text: 'Barakallahu lakuma wa baraka alaikuma. Semoga menjadi keluarga sakinah mawaddah warahmah! ❤️', status: 'Hadir' },
-  { name: 'Aisyah Putri', text: 'Selamat menempuh hidup baru! Semoga selalu dilimpahi kebahagiaan dan keberkahan. Aamiin 🤲', status: 'Hadir' },
-  { name: 'Reza Mahendra', text: 'Happy wedding Farah & Ikram! Semoga menjadi pasangan yang saling melengkapi. Barakallah! 🎉', status: 'Tidak Hadir' },
-]
+import { useState, useCallback, useEffect } from 'react'
+import { supabase } from '../config/supabase'
 
 export default function RsvpSection() {
-  const [wishes, setWishes] = useState(initialWishes)
+  const [wishes, setWishes] = useState([])
   const [form, setForm] = useState({ name: '', message: '', attendance: '' })
   const [isSubmitting, setIsSubmitting] = useState(false)
+
+  useEffect(() => {
+    fetchWishes()
+  }, [])
+
+  const fetchWishes = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('wishes')
+        .select('*')
+        .order('created_at', { ascending: false })
+      
+      if (error) throw error
+      if (data) setWishes(data)
+    } catch (error) {
+      console.error('Error fetching wishes:', error.message)
+      setWishes([
+        { name: 'Sistem', text: 'Tabel wishes belum dibuat di database atau API key salah.', status: 'Hadir' }
+      ])
+    }
+  }
 
   const handleChange = useCallback((e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }, [])
 
-  const handleSubmit = useCallback((e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!form.name.trim() || !form.message.trim() || !form.attendance) return
     setIsSubmitting(true)
-    setTimeout(() => {
+
+    try {
+      const { error } = await supabase
+        .from('wishes')
+        .insert([
+          { name: form.name, text: form.message, status: form.attendance }
+        ])
+
+      if (error) throw error
+
       setWishes(prev => [{
         name: form.name,
         text: form.message,
         status: form.attendance,
       }, ...prev])
+      
       setForm({ name: '', message: '', attendance: '' })
+    } catch (error) {
+      console.error('Error saving wish:', error.message)
+      alert('Gagal mengirim ucapan. Pastikan tabel di database sudah siap.')
+    } finally {
       setIsSubmitting(false)
-    }, 600)
-  }, [form])
+    }
+  }
 
   return (
     <section className="rsvp-section" id="rsvp" style={{ textAlign: 'center', position: 'relative' }}>
